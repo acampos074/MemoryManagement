@@ -17,12 +17,14 @@ ChatLogic::ChatLogic()
 {
     //// STUDENT CODE
     ////
-
+    // TASK 5: commented these two lines as 
+    // ChatLogic is not responsible anymore 
+    // of ChatBot creation
     // create instance of chatbot
-    _chatBot = new ChatBot("../images/chatbot.png");
+    //_chatBot = new ChatBot("../images/chatbot.png");
 
     // add pointer to chatlogic so that chatbot answers can be passed on to the GUI
-    _chatBot->SetChatLogicHandle(this);
+    //_chatBot->SetChatLogicHandle(this);
 
     ////
     //// EOF STUDENT CODE
@@ -32,9 +34,10 @@ ChatLogic::~ChatLogic()
 {
     //// STUDENT CODE
     ////
-
+    // TASK 5: commented this line as ChatLogic 
+    // is not responsible for ChatBot destruction
     // delete chatbot instance
-    delete _chatBot;
+    //delete _chatBot;
 
     // delete all nodes
     // TASK 3: Memory deallocation will be automatic with smart pointers
